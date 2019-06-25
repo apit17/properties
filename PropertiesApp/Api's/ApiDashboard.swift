@@ -47,6 +47,11 @@ enum ApiDashboard: URLRequestConvertible {
         if let token = token {
             urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
-        return try JSONEncoding.default.encode(urlRequest, with: self.parameter)
+        switch self {
+        case .getProperties():
+            return try URLEncoding.default.encode(urlRequest, with: self.parameter)
+        case .addProperty(_):
+            return try JSONEncoding.default.encode(urlRequest, with: self.parameter)
+        }
     }
 }

@@ -38,13 +38,10 @@ class DashboardViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.getProperties()
         tableViewProperties.delegate = self
         tableViewProperties.dataSource = self
         tableViewProperties.register(UITableViewCell.self, forCellReuseIdentifier: "propertyCell")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        presenter.getProperties()
     }
     
     @IBAction func onButtonAddPropertyPressed(_ sender: Any) {
