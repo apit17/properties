@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ReachabilitySwift (4.3.1)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReachabilitySwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ReachabilitySwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: a677ce1bcf0b36ade5b868a4a0ffa71d3a83a452
+
+COCOAPODS: 1.6.1
